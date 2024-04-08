@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --background: #1B2430;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato';
+}
+
+/* VS Code Default Theme */
+.vscode {
+    --background: #1e1e1e;
+    --foreground: #d4d4d4;
+    --selection: #264f78;
+    --comment: #6a9955;
+    --cyan: #4ec9b0;
+    --blue: #569cd6;
+    --purple: #b5cea8;
+    --green: #b5cea8;
+    --red: #d16969;
+    --orange: #ce9178;
+    --yellow: #dcdcaa;
+    --pink: #c586c0;
+}
+
+/* Monokai Theme */
+.monokai {
+    --background: #272822;
+    --foreground: #f8f8f2;
+    --selection: #49483e;
+    --comment: #75715e;
+    --cyan: #66d9ef;
+    --blue: #81a2be;
+    --purple: #ae81ff;
+    --green: #a6e22e;
+    --red: #f92672;
+    --orange: #fd971f;
+    --yellow: #e6db74;
+    --pink: #f92672;
+}
+
+/* Solarized Light Theme */
+.solarized-light {
+    --background: #fdf6e3;
+    --foreground: #657b83;
+    --selection: #93a1a1;
+    --comment: #93a1a1;
+    --cyan: #2aa198;
+    --blue: #268bd2;
+    --purple: #6c71c4;
+    --green: #859900;
+    --red: #dc322f;
+    --orange: #cb4b16;
+    --yellow: #b58900;
+    --pink: #d33682;
+}
+
+/* Solarized Dark Theme */
+.solarized-dark {
+    --background: #002b36;
+    --foreground: #839496;
+    --selection: #073642;
+    --comment: #586e75;
+    --cyan: #2aa198;
+    --blue: #268bd2;
+    --purple: #6c71c4;
+    --green: #859900;
+    --red: #dc322f;
+    --orange: #cb4b16;
+    --yellow: #b58900;
+    --pink: #d33682;
+}
+
+/* Dracula Theme */
+.dracula {
+    --background: #282a36;
+    --foreground: #f8f8f2;
+    --selection: #44475a;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --blue: #bd93f9;
+    --purple: #ff79c6;
+    --green: #50fa7b;
+    --red: #ff5555;
+    --orange: #ffb86c;
+    --yellow: #f1fa8c;
+    --pink: #ff79c6;
+}
+
+
+.navbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 3rem;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar-item {
+    display: inline;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-container {
+    width: 100%;
+}
+
+
+.bg-hero {
+    height: calc(100vh - 3rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-introduction {}
+
+.hero-terminal-container {
+    background-color: var(--background);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.terminal {
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-user {
+    color: var(--green);
+}
+
+.terminal-text {
+    color: var(--foreground);
+}
