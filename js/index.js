@@ -3,4 +3,5 @@ const writeHeader = () => {
   console.log(terminalHeader);
 };
 
+feather.replace();
 writeHeader()
