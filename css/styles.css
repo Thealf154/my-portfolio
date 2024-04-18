@@ -12,6 +12,11 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+.title {
+    text-decoration: none;
+    color: black;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -80,11 +85,19 @@ body {
     margin-bottom: 5rem;
 }
 
+.projects-wrap {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
 .projects-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-top: 3rem;
+    align-items: center;
+    overflow-x: scroll;
+    max-width: 90%;
 }
 
 .project {
@@ -95,7 +108,11 @@ body {
     border-radius: 20px;
     padding: 1.5rem;
     width: 20vw;
-    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.project:last-child{
+    margin-right: 0rem;
 }
 
 .project-header {
@@ -141,7 +158,18 @@ body {
     text-align: center;
 }
 
+.experience > h2 {
+    font-size: 30px;
+}
+
+.experience > p {
+    font-size: 20px;
+}
+
 footer {
     text-align: center;
+}
 
+.credit {
+    font-size: 20px;
 }
